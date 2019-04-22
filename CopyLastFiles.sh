@@ -8,11 +8,14 @@ declare -a "databases=( $( < schemas.txt ) )"
 #Backups folder
 #ATTENTION: Including / at the end
 backup_dir=/mnt/bckp_dir/
+#Destiny folder
 dir_destiny=/mnt/HD/HD_a2/MySQL/
+#Destiny IP address
 ip_destiny=172.23.255.208
+#Destiny username
 us_destiny=root
 
-#Archivo de log                                                                                                       │
+#Log file                                                                               │
 logfile=./weekly-copy.log
 
 #Check every defined schema
