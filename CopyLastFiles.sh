@@ -29,6 +29,6 @@ do
     echo $(date +%d-%m-%Y/%T)" - Copying $fn to $dir_destino"
     echo "Copying $fn to $dir_destino" >> $logfile
     # File copy. We use sshpass to read credentiales a bit safely from the external file
-    sshpass -f ".credencials" scp -r "$fn" "$us_destiny"@"$ip_destiny":"$dir_destiny"
+    sshpass -f ".credentials" scp -r "$fn" "$us_destiny"@"$ip_destiny":"$dir_destiny"
   fi
 done
