@@ -1,6 +1,6 @@
 #!/bin/bash
 #Script to copy backups to an external location using SCP
-#David Sanchez Alvarez April/2019
+#David Sanchez Alvarez May/2019
 
 #Backups folder
 #ATTENTION: Including / at the end
