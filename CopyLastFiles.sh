@@ -29,8 +29,8 @@ do
   # Continue if we obtained a result
   if  [ ! -z "$fn" ]
   then
-    echo $(date +%d-%m-%Y/%T)" - Copying $fn to $dir_destino"
-    echo $(date +%d-%m-%Y/%T)" - Copying $fn to $dir_destino" >> $logfile
+    echo $(date +%d-%m-%Y/%T)" - Copying $fn to $dir_destiny"
+    echo $(date +%d-%m-%Y/%T)" - Copying $fn to $dir_destiny" >> $logfile
     # File copy. We use sshpass to read credentiales a bit safely from the external file
     sshpass -f "$credentials" scp -r "$fn" "$us_destiny"@"$ip_destiny":"$dir_destiny"
   fi
